@@ -1,0 +1,41 @@
+.fieldset-expandido{
+	border: 1px solid;
+}
+.fieldset-retraido{
+	border-left: 0px;
+	border-top: 1px solid;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+legend{
+  padding: 0.2em 0.5em;
+  border:1px solid;
+  font-size:90%;
+  text-align:right;
+}
+.controle-expandir-fildset{
+	position: relative;
+	left: 10px;
+	top: -30px;
+}
+.controle-retrair-fildset{
+	position: relative;
+	left: 10px;
+	top: -30px;
+}
+
+.fieldset-expandido .controle-expandir-fildset{
+	display: none;
+}
+
+.fieldset-retraido .controle-expandir-fildset{
+	display: block;
+}
+
+.fieldset-expandido .controle-retrair-fildset{
+	display: block;
+}
+
+.fieldset-retraido .controle-retrair-fildset{
+	display: none;
+}

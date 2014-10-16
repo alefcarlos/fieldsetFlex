@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="js/fieldset.css">
+	</head>
+	<body>
+		<fieldset id="fd">
+			<legend>Filtros</legend>
+			<button type="button" class="controle-expandir-fildset">+</button>
+			<button type="button" class="controle-retrair-fildset">-</button>
+			<div>Conteúdo............</div>
+		</fieldset>
+	</body>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/fieldsetFlex.js"></script>
+	<script type="text/javascript">
+		function mostrar(){
+			console.log('Funciou calback');
+		}
+		
+		$(function(){
+			$('#fd').fieldsetFlex({duration: 'fast', initState : 'retraido'});
+		});
+	</script>
+</html>
